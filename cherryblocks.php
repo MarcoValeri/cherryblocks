@@ -1,3 +1,4 @@
+<?php
 /**
  * Plugin Name:       Cherry Blocks
  * Description:       Cherry Blocks for custom WordPress blocks
@@ -9,3 +10,8 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       cherryblocks
  */
+
+ function create_block_cherryblocks_block_init() {
+    register_block_type(__DIR__ . '/build');
+ }
+ add_action('init', 'create_block_cherryblocks_block_init');

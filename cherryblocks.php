@@ -13,10 +13,12 @@
  * @package cherryblocks
  */
 
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+    exit;
+}
 
-add_shortcode('cherryblocks', 'cherry_block');
-function cherry_block()
+add_shortcode('cherryblocks', 'wp_cherry_block');
+function wp_cherry_block()
 {
     ob_start();
     ?>

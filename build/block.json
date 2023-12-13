@@ -1,17 +1,19 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "cherryblocks/cherryblocks",
-  "title": "Cherry Blocks",
+  "name": "cherryblocks/cherryblocks-block",
+  "version": "0.1.0",
+  "title": "Cherry Block",
   "category": "widgets",
   "icon": "smiley",
-  "description": "Simple cherry block",
-  "version": "1.0.3",
-  "textdomain": "cherryblocks",
+  "description": "Simple Cherry Block",
+  "example": {},
   "supports": {
     "html": false
   },
+  "textdomain": "cherryblocks",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
 }
